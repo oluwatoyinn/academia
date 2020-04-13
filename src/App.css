@@ -1,0 +1,83 @@
+
+
+.caro_image
+{
+  position: fixed;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  color: #fff;
+  font-size: 30px;
+}
+.text
+{
+  font-size: 60px;
+}
+
+.caption
+{
+  position: absolute;
+  z-index: 1;
+  display:table;
+  width:100%;
+  height:100%;
+}
+
+.product
+{
+  height: 70vh;
+  width: 100%;
+}
+.icon
+{
+  text-align: center;
+}
+
+.info_text
+{
+   width: 100%;
+  color: #fff;
+}
+
+.info_img
+{
+  height: 80vh;
+  width: 100%;
+  background-image: url(./teach.jpg);
+  background-size: cover;
+}
+
+.carousel .item {
+  height:800px;
+}
+
+.item img {
+    /* position: absolute; */
+    /* object-fit:cover; */
+    top: 0;
+    left: 0;
+    min-height: 800px;
+}
+
+/* products */
+.product p
+{
+  font-size: 20px;
+}
+.tutor
+{
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 24px;
+  color: #fff;
+  width: 83%;
+  text-transform: capitalize;
+ 
+}
+
+/* Expert */
+
+
+
+
