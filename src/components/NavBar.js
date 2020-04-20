@@ -6,17 +6,18 @@ class NavBar extends Component {
         return (
             <>
                 <Navbar bg="dark" variant="dark" className="navbar">
-                    <Navbar.Brand href="#home" className="mr-5">Academia</Navbar.Brand>
+                    {/* <Navbar.Brand href="#home" className="mr-5">Academia</Navbar.Brand> */}
+                    <Link to="/"  > <span className="text-capitalize header">academia</span> </Link>
                         <Nav className="ml-auto">
-                            <ul className="navbar-nav align-items-center">
-                                <li className="nav-item ml-5">
-                                    <Link to="/">Home</Link>
+                            <ul className="navbar-nav align-items-center ">
+                                {/* <li className="nav-item ml-5 ">
+                                    <Link to="/"  className="navLink">Home</Link>
+                                </li> */}
+                                <li className="nav-item ml-5 ">
+                                    <Link to="/registertutor"  className="navLink">Become a tutor</Link>
                                 </li>
-                                <li className="nav-item ml-5">
-                                    <Link to="/">About</Link>
-                                </li>
-                                <li className="nav-item ml-5 mr-5">
-                                    <Link to="/">Subject</Link>
+                                <li className="nav-item ml-5 mr-5 ">
+                                    <Link to="/" className="navLink">Subject</Link>
                                 </li>
                             </ul>
                         </Nav>

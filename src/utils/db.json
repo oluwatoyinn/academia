@@ -2,7 +2,7 @@
     "biodata":[
         {
             "id":1,
-            "img":"expert/boss.jpg",
+            "img":"img2/avatar5.png",
             "title":"Mr",
             "firstname": "Victor",
             "lastname":"Jay",
@@ -10,7 +10,7 @@
         },
         {
             "id":2,
-            "img":"expert/kemi.JPG",
+            "img":"img2/avatar.png",
             "title":"Mrs",
             "firstname": "Charles",
             "lastname":"Nneji",
@@ -18,7 +18,7 @@
         },
         {
             "id":3,
-            "img":"expert/rotex.jpg",
+            "img":"img2/avatar2.png",
             "title":"Dr",
             "firstname": "Victoria",
             "lastname":"Nne",
@@ -26,7 +26,7 @@
         },
         {
             "id":4,
-            "img":"expert/boss.jpg",
+            "img":"img2/avatar3.png",
             "title":"Prof",
             "firstname": "Victor",
             "lastname":"Fredrick",
@@ -34,7 +34,7 @@
         },
         {
             "id":5,
-            "img":"expert/speed.jpg",
+            "img":"img2/avatar04.png",
             "title":"Engr",
             "firstname": "James",
             "lastname":"Noah",
@@ -42,27 +42,27 @@
         },
         {
             "id":6,
-            "img":"expert/rotex.jpg",
+            "img":"img2/avatar2.png",
             "title":"Mr",
             "firstname": "Chuks",
             "lastname":"David",
-           " department":"Biology"
+            "department":"Biology"
         },
         {
             "id":7,
-            "img":"expert/kemi.JPG",
+            "img":"img2/avatar5.png",
             "title":"Engr",
             "firstname": "Davisdon",
             "lastname":"Otobong",
-           " department":"Economics"
+            "department":"Economics"
         },
         {
             "id":8,
-            "img":"expert/boss.jpg",
+            "img":"img2/avatar04.png",
             "title":"Mrs",
             "firstname": "Charles",
             "lastname":"Nnenna",
-           " department":"Arts"
+            "department":"Arts"
         }
     
     ]

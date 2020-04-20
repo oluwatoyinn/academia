@@ -1,21 +1,26 @@
 import React from 'react';
 import './App.css';
 import NavBar from './components/NavBar'
-import Sliding from './components/Sliding'
-import Products from './components/Products';
-import Info from './components/Info';
-import Program from './components/Program'
-import Experts from './components/Experts'
+import Subject from './components/Subject'
+import {Route,Switch} from 'react-router-dom'
+import HomePage from './components/HomePage'
+import Footer from './components/Footer';
+import Register from './components/Register'
+import RegisterTutor from './components/RegisterTutor'
+import FormikTest from './components/FormikTest'
 
 function App() {
   return (
     <>
+    {/* <FormikTest /> */}
+    {/* <RegisterTutor /> */}
       <NavBar />
-      <Sliding />
-      <Products />
-      <Info />
-      {/* <Program /> */}
-      <Experts />
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+        <Route  path="/subject" component={Subject} />
+        <Route path="/registertutor" component={RegisterTutor} />
+      </Switch>
+      <Footer />
     </>
   );
 }

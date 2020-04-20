@@ -1,5 +1,21 @@
 
 
+.navLink
+{
+  color: #fff !important;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px ;
+}
+
+
+ .header
+{
+  color: #fff !important;
+  font-size: 20px;
+  text-decoration: none;
+}
+
 .caro_image
 {
   position: fixed;
@@ -61,23 +77,110 @@
 }
 
 /* products */
-.product p
+.product  p
 {
-  font-size: 20px;
+  font-size: 20px ;
 }
 .tutor
 {
   border-radius: 5px;
   padding: 10px;
-  font-size: 24px;
+  font-size: 24px !important;
   color: #fff;
   width: 83%;
   text-transform: capitalize;
- 
 }
 
 /* Expert */
+.expert
+{
+  width: 300px;
+  height: 370px;
+  margin: auto; 
+}
+.expert_p
+{
+  font-size: 20px;
+}
 
+/* footer section */
+.apply_tutor
+{
+  height: 40vh;
+  
+}
+/* .apply_text
+{
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 20px;
+} */
+.apply_text
+{
+   /* background: #fff; */
+    width: 30px;
+    margin:50px;
+    border-radius: 0px 20px 0px 20px;
+    padding: 5px;
+    color: #fff;
+}
+.teaching
+{
+  font-size: 24px !important;
+}
+.subject nav-link
+{
+  color:#fff !important;
 
+}
+/* .sub_bg
+{
+  {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('');
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+} */
 
+.sub_bg hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
 
+.wrap
+{
+  padding:40px 20px;
+  box-sizing:border-box;
+  /* border:1px gray solid */
+}
+.wrap error
+{
+  color:red !important;
+  background-color:blue;
+}
+label 
+{
+  padding:10px;
+}
+input
+{
+  width:100%
+}
+.vl
+{
+  border-left: 2px solid gray;
+  height:auto;
+}
+hr
+{
+  border: 2px solid gray;
+  height:auto;
+} 

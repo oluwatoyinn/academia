@@ -1,41 +1,58 @@
 import React, { Component } from 'react'
-import {tutorInfo} from '../Data'
+// import {tutorInfo} from '../Data' 
 import styled from 'styled-components'
+import axios from 'axios'
+import {base_url} from './config/constant'
+import {Link}  from 'react-router-dom'
 
-export class Experts extends Component {
+class Experts extends Component {
     constructor(props) {
         super(props)
     
         this.state = {
-             data:tutorInfo
+             data:[]
         }
     }
 
-    getTutor =()=> {
+    componentDidMount(){
+        this.getTutor()
+    }
 
+    getTutor =()=> {
+        axios.get(`${base_url}/biodata`)
+        .then(res=>{   
+            
+            this.setState({
+                data:res.data
+            })
+        })
     }
 
     
     render() {
-
         const {data} = this.state
 
         return (
-            <>
 
-                <div className="container-fluid">
-                    <h2 className="text-center text-capitalize font-weight-bold">learn from expert</h2>
+            <>         
+                <div className="container-fluid expert_p"> 
+                                
+                    <h1 className="text-center text-capitalize font-weight-bold">learn from expert</h1>
                     <p className="text-center">No need to struggle. Get an experienced tutor.</p>
 
                     <div className="row">
-                        {data.map(data=>{
-                        const {img,firstname,lastname,department} = data;
+                        {data.map(data =>{
+
+                        const {id,img,firstname,lastname,department} = data;
 
                             return (
-                                <div className="col-md-3">
+                                <Wrapper className=" container col-9 mx-auto col-md-6 h-70vh col-lg-3 my-3 mx-2 ml-0">
+                                <div className="expert" key={id}>
                                     <div className="card">                                          
                                         <div className="img_cont">
-                                            <img className="card-img-top " src={img} alt="Card image"  />
+                                            <Link to="/subject">
+                                            <img className="card-img-top w-10" src={img} alt="Card image"/>
+                                            </Link>
                                         </div>
                                         <div className="card-footer justify-content-between">
                                             <h4 className="align-self-centre text-center mb-0"> {` ${lastname} ${firstname}`} </h4>
@@ -43,10 +60,9 @@ export class Experts extends Component {
                                         </div>
                                     </div>
                                 </div>
+                                </Wrapper>
                             )
                         })}
-                    
-                        
                     </div>
                 
                 </div>
@@ -61,14 +77,14 @@ export class Experts extends Component {
 export default Experts
 
 const Wrapper = styled.div `
- 
+
 card
 {
   border-color: transparent;
-  transition: all 1s linear
+  transition: all 1s linear;
+
 }
 .card-footer
-
 {
     background: transparent;
     border-top:transparent; 
@@ -84,23 +100,18 @@ card
         background:rgba(247,247,247);
     } 
 }
-."img"_cont
+.img_cont
 {
   position: relative;
   overflow: hidden;
+  border-radius: 10px;
 }
-.card-"img"-top{ 
+.card-img-top{ 
   transition:all 1s linear;
 }
-."img"_cont:hover .card-"img"-top
+.img_cont:hover .card-img-top
 {
   transform:scale(1.2);
-}
-
-.expert
-{
-    
-    
 }
 
 
