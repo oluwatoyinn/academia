@@ -5,9 +5,9 @@ import Subject from './components/Subject'
 import {Route,Switch} from 'react-router-dom'
 import HomePage from './components/HomePage'
 import Footer from './components/Footer';
-import Register from './components/Register'
+// import Register from './components/Register'
 import RegisterTutor from './components/RegisterTutor'
-import FormikTest from './components/FormikTest'
+// import FormikTest from './components/FormikTest'
 
 function App() {
   return (

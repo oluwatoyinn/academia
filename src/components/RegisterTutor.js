@@ -17,14 +17,23 @@ const validationSchema = Yup.object().shape({
 })
 
 
+
+
+
 const RegisterTutor = () => {  
     return (
 
         <>
-
-        h1
         
-        <div className="container-fluid sub_ng">
+        <div className="container-fluid ">
+                <div className="col-md-12 clearfix mb-2">
+                    <div className="float-right">
+                            <Link to="/"> 
+                                <i className="fas fa-chevron-circle-left" ><span className="mt-3 pr-3"> Go Back</span> </i> 
+                            </Link>
+                    </div> 
+                   
+                </div>
             <div className="row">
                 <div className="col-md-4 subject  col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
                 <div className="vl"></div>
@@ -106,8 +115,8 @@ const RegisterTutor = () => {
                     <form>
                     <div className="form-group"> 
                         <label htmlFor="firstname" >First Name</label>
-                        <input id="firstname" {...formik.getFieldProps('firstname')} /> 
-                        {formik.errors.firstname && formik.touched.firstname  ? (<div style={{color: 'red'}} >{formik.errors.firstname}</div>) :null}
+                        <input id="firstname" onBlur={formik.handleBlur} {...formik.getFieldProps('firstname')}  /> 
+                        {formik.touched.firstname && formik.errors.firstname  ? (<div style={{color: 'red'}} >{formik.errors.firstname}</div>) :null}
                     </div>
                      <div className="form-group"> 
                         <label htmlFor="lastname" >Last Name</label>

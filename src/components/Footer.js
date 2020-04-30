@@ -7,7 +7,7 @@ class Footer extends Component {
         return (
             <React.Fragment>
 
-                <footer className="page-footer apply_tutor font-small bg-primary my-5 py-4">
+                <footer className="page-footer apply_tutor font-small bg-primary my-5 py-2">
                     <div className="container apply_text">
                         <div className="list-unstyled list-inline my-3 text-center ">
                             <div className="my-4">

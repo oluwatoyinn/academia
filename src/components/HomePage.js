@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import Sliding from './Sliding'
 import Products from './Products'
 import Info from './Info'
-import Experts from './Experts'
+import Experts from './TestFolder/Experts'
+// import FormBin from './FormBin' 
    
 export class HomePage extends Component {
     render() {
@@ -11,6 +12,9 @@ export class HomePage extends Component {
             <Sliding />
             <Products />
             <Info />
+{/* FormBin for API Calls */}
+            {/* <FormBin />  */}
+{/* api calls */}
             <Experts />
             </>
         )
