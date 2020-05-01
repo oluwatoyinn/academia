@@ -89,14 +89,16 @@
 {
   font-size: 20px ;
 }
+
 .tutor
 {
   border-radius: 5px;
   padding: 10px;
-  font-size: 24px !important;
-  color: #fff;
+  font-size: 27px !important;
+  color: #fff !important;
   width: 83%;
   text-transform: capitalize;
+  background-color: green !important;
 }
 
 /* Expert */
@@ -138,6 +140,7 @@
 {
   font-size: 24px !important;
 }
+
 .subject nav-link
 {
   color:#fff !important;

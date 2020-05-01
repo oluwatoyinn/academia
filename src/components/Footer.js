@@ -14,7 +14,7 @@ class Footer extends Component {
                                 <h5 className="text-capitalize teaching">experienced in teaching?</h5>
                             </div>
                             <div className="my-4">
-                            <Link to="/registertutor" className="btn tutor btn-rounded text-capitalize">apply to tutor</Link>
+                                <Link to="/registertutor" className="btn tutor btn-rounded text-capitalize">apply to tutor</Link>
                             </div>
                         </div>                       
                     </div>               
@@ -82,31 +82,31 @@ class Footer extends Component {
                     <hr className="clearfix w-100 d-md-none" />
                     {/* Grid column */}
 
-                        <div className="col-md-3 col-lg-2 text-center mx-auto my-4">
-                            <h5 className="font-weight-bold text-uppercase mb-4">Follow Us</h5>  
-                            <ul className="list-unstyled py-2">
-                                <li>
-                                    <Link type="button" className="btn-floating btn-fb">
-                                        <i className="fab fa-facebook-f" />
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link type="button" className="btn-floating btn-tw">
-                                        <i className="fab fa-twitter" />
-                                    </Link>
-                                </li>
-                                <li>             
-                                    <Link type="button" className="btn-floating btn-gplus">
-                                        <i className="fab fa-google-plus-g" />
-                                    </Link>
-                                </li>
-                                <li>                
-                                <Link type="button" className="btn-floating btn-dribbble">
-                                    <i className="fab fa-dribbble" />
+                    <div className="col-md-3 col-lg-2 text-center mx-auto my-4">
+                        <h5 className="font-weight-bold text-uppercase mb-4">Follow Us</h5>  
+                        <ul className="list-unstyled py-2">
+                            <li>
+                                <Link type="button" className="btn-floating btn-fb py-2">
+                                    <i className="fab fa-facebook-f" />
                                 </Link>
-                                </li> 
-                            </ul> 
-                        </div>
+                            </li>
+                            <li>
+                                <Link type="button" className="btn-floating btn-tw">
+                                    <i className="fab fa-twitter" />
+                                </Link>
+                            </li>
+                            <li>             
+                                <Link type="button" className="btn-floating btn-gplus py-2">
+                                    <i className="fab fa-google-plus-g" />
+                                </Link>
+                            </li>
+                            <li>                
+                            <Link type="button" className="btn-floating btn-dribbble py-2">
+                                <i className="fab fa-dribbble" />
+                            </Link>
+                            </li> 
+                        </ul> 
+                    </div>
                     </div>
                 </div>
               

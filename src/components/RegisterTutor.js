@@ -13,7 +13,6 @@ const validationSchema = Yup.object().shape({
     password: Yup.string().min(5, "Password must contain at least 5 characters").required("Enter your password"),
     confirmPassword:Yup.string("Enter your password").required("Confirm your password").oneOf([Yup.ref("password")],"Password does not match"),
     file: Yup.mixed().required()
-
 })
 
 
@@ -29,7 +28,7 @@ const RegisterTutor = () => {
                 <div className="col-md-12 clearfix mb-2">
                     <div className="float-right">
                             <Link to="/"> 
-                                <i className="fas fa-chevron-circle-left" ><span className="mt-3 pr-3"> Go Back</span> </i> 
+                                <i className="fas fa-chevron-circle-left" ><span className="mt-3  pr-3"> Go Back</span> </i> 
                             </Link>
                     </div> 
                    
@@ -69,6 +68,7 @@ const RegisterTutor = () => {
                               <li>
                                   <p><Link to="">Chemistry</Link></p>
                               </li>
+                              <hr/>
                               <li>
                                   <p><Link to="">Biology</Link></p>
                               </li>
@@ -85,7 +85,7 @@ const RegisterTutor = () => {
                                   <p><Link to="">Biology</Link></p>
                               </li>
                               <hr/>
-                                <li>
+                              <li>
                                   <p><Link to="">Web Design</Link></p>
                               </li>
                               <hr/>

@@ -22,7 +22,7 @@ class Experts extends Component {
 
                                     </div>
                                     <div className="avatar">
-                                        <img alt src="img/avatar.png" />
+                                        <img alt src="img/avatar.png"/>
                                     </div>
                                     <div className="info">
                                         <div className="title">
