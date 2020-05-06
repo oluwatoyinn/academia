@@ -9,18 +9,18 @@ class Footer extends Component {
 
                 <footer className="page-footer apply_tutor font-small bg-primary my-5 py-2">
                     <div className="container apply_text">
-                        <div className="list-unstyled list-inline my-3 text-center ">
+                        <div className="list-unstyled list-inline my-3 text-center  ">
                             <div className="my-4">
                                 <h5 className="text-capitalize teaching">experienced in teaching?</h5>
                             </div>
                             <div className="my-4">
-                                <Link to="/registertutor" className="btn tutor btn-rounded text-capitalize">apply to tutor</Link>
+                                <Link to="/registertutor" className="btn tutor text-capitalize">apply to tutor</Link>
                             </div>
                         </div>                       
                     </div>               
-                </footer>
+               
 
-                <footer className="page-footer footer_details font-small mdb-color lighten-3 pt-4">
+                <div className="page-footer footer_details font-small mdb-color lighten-3 pt-5">
                 <div className="container-fluid text-center text-md-left">
                 {/* Grid row */}
                     <div className="row">
@@ -110,6 +110,7 @@ class Footer extends Component {
                     </div>
                 </div>
               
+                </div>
                 </footer>
                 {/* Footer */}
 

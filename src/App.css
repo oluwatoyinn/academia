@@ -98,7 +98,7 @@
   color: #fff !important;
   width: 83%;
   text-transform: capitalize;
-  background-color: green !important;
+  background: green !important;
 }
 
 /* Expert */
@@ -119,14 +119,7 @@
   height: 40vh;
   
 }
-/* .apply_text
-{
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  font-size: 20px;
-} */
+
 .apply_text
 {
    /* background: #fff; */
@@ -134,11 +127,11 @@
     margin:50px;
     border-radius: 0px 20px 0px 20px;
     padding: 5px;
-    color: #fff;
+    /* color: #fff; */
 }
 .teaching
 {
-  font-size: 24px !important;
+  font-size: 30px !important;
 }
 
 .subject nav-link
