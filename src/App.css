@@ -116,16 +116,19 @@
 /* footer section */
 .apply_tutor
 {
-  height: 40vh; 
+  height: 40vh;
+  width: 100%; 
 }
 
 .apply_text
 {
    /* background: #fff; */
-    width: 30px;
+    width: auto;
     margin:50px;
-    border-radius: 0px 20px 0px 20px;
+    border-radius: 2px 20px 0px 20px;
     padding: 5px;
+    padding-right: 20px;
+    
     /* color: #fff; */
 }
 .teaching
