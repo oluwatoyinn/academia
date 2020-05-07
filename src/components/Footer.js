@@ -6,8 +6,9 @@ class Footer extends Component {
     render() {
         return (
             <React.Fragment>
-
-                <footer className="page-footer apply_tutor font-small bg-primary my-5 py-2">
+                <div className="container-fluid">
+                    <div className="col-12">
+                    <footer className="page-footer apply_tutor font-small bg-primary my-5 py-2">
                     <div className="container apply_text">
                         <div className="list-unstyled list-inline my-3 text-center  ">
                             <div className="my-4">
@@ -20,7 +21,7 @@ class Footer extends Component {
                     </div>               
                
 
-                <div className="page-footer footer_details font-small mdb-color lighten-3 pt-5">
+                <div className="page-footer font-small mdb-color lighten-3 pt-5">
                 <div className="container-fluid text-center text-md-left">
                 {/* Grid row */}
                     <div className="row">
@@ -112,6 +113,9 @@ class Footer extends Component {
               
                 </div>
                 </footer>
+                    </div>
+                </div>
+                
                 {/* Footer */}
 
 
