@@ -1,6 +1,7 @@
 import React from 'react'
+import {Nav, Navbar} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
-import {Formik} from 'formik'
+import {Formik,Form} from 'formik'
 import * as Yup from 'yup'
 
 
@@ -23,17 +24,29 @@ const RegisterTutor = () => {
     return (
 
         <>
+         <Navbar bg="dark" variant="dark" className=" navbar fixed-top"  collapseOnSelect expand="lg">
+                    {/* <Navbar.Brand href="#home" className="mr-5">Academia</Navbar.Brand> */}
+                   <span className="text-capitalize header" >Join thousand of professional</span>
+                        <Nav className=" ml-auto" >
+                            <ul className="navbar-nav align-items-center ml-5 mr-5 ">
+                                <li className="nav-item  mr-3 text-light font-weight-bold ">
+                                    <Link to="/" className="nav-link"> HOME</Link>
+                                </li>  
+                            </ul>  
+                        </Nav>
+        </Navbar> 
         
-        <div className="container-fluid ">
+        <div className="container-fluid mt-5">
+            <div className="registerTutor">
                 <div className="col-md-12 clearfix mb-2">
-                    <div className="float-right">
-                            <Link to="/"> 
-                                <i className="fas fa-chevron-circle-left" ><span className="mt-3  pr-3"> Go Back</span> </i> 
-                            </Link>
-                    </div> 
+                        {/* <div className="float-right">
+                                <Link to="/"> 
+                                    <i className="fas fa-chevron-circle-left" ><span className="mt-3  pr-3"> Go Back</span> </i> 
+                                </Link>
+                        </div>  */}
                    
                 </div>
-            <div className="row">
+                <div className="row">
                 <div className="col-md-4 subject  col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
                 <div className="vl"></div>
                             <form className="form-inline my-2 my-lg-0">
@@ -111,46 +124,47 @@ const RegisterTutor = () => {
                         file:null}} 
                         validationSchema={validationSchema}
                         >
-                    {formik => (
-                    <form>
+                    {({handleBlur,getFieldProps,touched,errors}) => (
+                    <Form>
                     <div className="form-group"> 
                         <label htmlFor="firstname" >First Name</label>
-                        <input id="firstname" onBlur={formik.handleBlur} {...formik.getFieldProps('firstname')}  /> 
-                        {formik.touched.firstname && formik.errors.firstname  ? (<div style={{color: 'red'}} >{formik.errors.firstname}</div>) :null}
+                        <input id="firstname" onBlur={handleBlur} {...getFieldProps('firstname')}  /> 
+                        {touched.firstname && errors.firstname  ? (<div style={{color: 'red'}} >{errors.firstname}</div>) :null}
                     </div>
                      <div className="form-group"> 
                         <label htmlFor="lastname" >Last Name</label>
-                        <input id="lastname" {...formik.getFieldProps('lastname')} /> 
-                        {formik.errors.lastname && formik.touched.lastname  ? (<div style={{color: 'red'}}>{formik.errors.lastname}</div>) :null}
+                        <input id="lastname" {...getFieldProps('lastname')} /> 
+                        {errors.lastname &&touched.lastname  ? (<div style={{color: 'red'}}>{errors.lastname}</div>) :null}
                     </div>
                      <div className="form-group"> 
                         <label htmlFor="contact" >Contact</label>
-                        <input id="contact" {...formik.getFieldProps('contact')} /> 
-                        {formik.errors.contact && formik.touched.contact  ? (<div style={{color: 'red'}}>{formik.errors.contact}</div>) :null}
+                        <input id="contact" {...getFieldProps('contact')} /> 
+                        {errors.contact && touched.contact  ? (<div style={{color: 'red'}}>{errors.contact}</div>) :null}
                     </div>
                     <div className="form-group"> 
                         <label htmlFor="firstname" >Email</label>
-                        <input id="email" {...formik.getFieldProps('email')} /> 
-                        {formik.errors.email && formik.touched.email  ? (<div style={{color: 'red'}}>{formik.errors.email}</div>) :null}
+                        <input id="email" {...getFieldProps('email')} /> 
+                        {errors.email && touched.email  ? (<div style={{color: 'red'}}>{errors.email}</div>) :null}
                     </div>
                     <div className="form-group"> 
                         <label htmlFor="password" >Password</label>
-                        <input id="password" type="password" className="p-3" {...formik.getFieldProps('password')} /> 
-                        {formik.errors.password && formik.touched.password ? (<div style={{color: 'red'}} >{formik.errors.password}</div>) :null}
+                        <input id="password" type="password" className="p-3" {...getFieldProps('password')} /> 
+                        {errors.password && touched.password ? (<div style={{color: 'red'}} >{errors.password}</div>) :null}
                     </div>
                     <div className="form-group"> 
                         <label htmlFor="confirmPassword" >Confirm Password</label>
-                        <input id="confirmPassword" type="password" className="p-3" {...formik.getFieldProps('confirmPassword')} /> 
-                        {formik.errors.confirmPassword && formik.touched.confirmPassword  ? (<div style={{color: 'red'}}>{formik.errors.confirmPassword}</div>) :null}
+                        <input id="confirmPassword" type="password" className="p-3" {...getFieldProps('confirmPassword')} /> 
+                        {errors.confirmPassword && touched.confirmPassword  ? (<div style={{color: 'red'}}>{errors.confirmPassword}</div>) :null}
                     </div>
                     <div className="form-group">
                         <label htmlFor="file">Profile</label>
                         <input type="file" name="file" className="form-control-file" id="file"/>
+                        {errors.file && touched.file  ? (<div style={{color: 'red'}}>{errors.file}</div>) :null}
                     </div>
                     <div className="">
                     <button type="submit" className="btn btn-primary">Submit</button>
                     </div>
-            </form>
+            </Form>
         )}
         </Formik>
         </div>
@@ -159,6 +173,8 @@ const RegisterTutor = () => {
 
             </div>
 
+            </div>
+                
         </div>
         
 

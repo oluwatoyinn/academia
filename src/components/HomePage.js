@@ -1,24 +1,29 @@
 import React, { Component } from 'react'
 import Sliding from './Sliding'
-import Products from './Products'
-import Info from './Info'
+import AboutUS from './AboutUs'
+import GetTutor from './GetTutor'
 import Experts from './TestFolder/Experts'
+import NavBar from '../components/NavBar'
+import Footer from './Footer'
+// import Subject from '../components/Subject'
 // import FormBin from './FormBin' 
    
 export class HomePage extends Component {
     render() {
         return (
             <>
-            <Sliding />
-            <Products />
-            <Info />
-{/* FormBin for API Calls */}
-            {/* <FormBin />  */}
-{/* api calls */}
-            <Experts />
+            <NavBar />
+            {/* <Subject /> */}
+               <Sliding /> 
+                {/* <AboutUS />            */}
+                <GetTutor />       
+                <Experts />        
+                <Footer />          
             </>
         )
     }
 }
 
 export default HomePage
+
+

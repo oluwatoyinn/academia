@@ -1,13 +1,17 @@
 import React, { Component } from 'react'
+import BottomFooter from './BottomFooter'
 import {Link} from 'react-router-dom'
 
 
 class Footer extends Component {
+
+   
     render() {
         return (
             <React.Fragment>
+                <div id="footer">
                 <div className="container-fluid">
-                    <div className="col-12">
+                    <div className="col-12 footerPage">
                     <footer className=" page-footer apply_tutor font-small bg-primary my-5 py-2">
                             <div className=" apply_text">
                                 <div className="list-unstyled list-inline my-3 text-center  ">
@@ -30,16 +34,16 @@ class Footer extends Component {
                                 <h5 className="font-weight-bold text-uppercase mb-4">get to know us</h5>
                                 <ul className="list-unstyled text-capitalize">
                                     <li>
-                                        <p> <Link to="">about academia</Link> </p>
+                                        <p> <Link to="#">about academia</Link> </p>
                                     </li>
                                     <li>
-                                        <p> <Link href="#!">trust and safety</Link> </p>
+                                        <p> <Link to="/">trust and safety</Link> </p>
                                     </li>
                                     <li>
-                                        <p><Link href="#!">blog</Link></p>
+                                        <p><Link to="/">blog</Link></p>
                                     </li>
                                     <li>
-                                        <p><Link href="#!">awards</Link></p>
+                                        <p><Link to="/">awards</Link></p>
                                     </li>
                                 </ul>
                             </div>
@@ -55,10 +59,10 @@ class Footer extends Component {
                                         <p> <Link to="">home tutoring</Link> </p>
                                     </li>
                                     <li>
-                                        <p> <Link href="#!">find subject</Link> </p>
+                                        <p> <Link to="/">find subject </Link> </p>
                                     </li>
                                     <li>
-                                        <p><Link href="#!">find tutor</Link></p>
+                                        <p><Link to="/">find tutor</Link></p>
                                     </li>
                                 
                                 </ul>
@@ -86,22 +90,22 @@ class Footer extends Component {
                                 <h5 className="font-weight-bold text-uppercase mb-4">Follow Us</h5>  
                                 <ul className="list-unstyled py-2">
                                     <li>
-                                        <Link type="button" className="btn-floating btn-fb py-2">
+                                        <Link to="/" type="button" className="btn-floating btn-fb py-2">
                                             <i className="fab fa-facebook-f" />
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link type="button" className="btn-floating btn-tw">
+                                        <Link to="/" type="button" className="btn-floating btn-tw">
                                             <i className="fab fa-twitter" />
                                         </Link>
                                     </li>
                                     <li>             
-                                        <Link type="button" className="btn-floating btn-gplus py-2">
+                                        <Link to="/" type="button" className="btn-floating btn-gplus py-2">
                                             <i className="fab fa-google-plus-g" />
                                         </Link>
                                     </li>
                                     <li>                
-                                    <Link type="button" className="btn-floating btn-dribbble py-2">
+                                    <Link to="/" type="button" className="btn-floating btn-dribbble py-2">
                                         <i className="fab fa-dribbble" />
                                     </Link>
                                     </li> 
@@ -109,14 +113,18 @@ class Footer extends Component {
                             </div>
                             </div>
                         </div>
-                    
-                       
+                        {/* <div className=" footerbelow fixed-below text-center">
+                            <footer class="bg-dark">Copyright@2019 <span>web class starks</span>.All rights reserved | Designed by <span>oluwatoyinn</span></footer>
+                        </div> */}
+                        <BottomFooter/>
                 </footer>
+                
+                
                     </div>
                 </div>
                 
                 {/* Footer */}
-
+                </div>
 
             </React.Fragment>
         )

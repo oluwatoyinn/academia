@@ -6,9 +6,7 @@ class Sliding extends Component {
     render() {
         return (
             <>
-   
-                <div className="row" >
-                    <div className="col-md-12  ">
+            <div id="slider">
                     <Carousel className="carousel">
                         <Carousel.Item className="item">
                             <img
@@ -16,7 +14,6 @@ class Sliding extends Component {
                             src="img/class.jpg"
                             alt="First slide"
                             />
-
                             <div className=" caption caro_image">
                             <SlidingTitle name="find your perfect tutor" title="Book one-on-one lessons with verified instructors in your area" />
                            
@@ -47,10 +44,7 @@ class Sliding extends Component {
                             </div>
                         </Carousel.Item>
                 </Carousel> 
-                    </div>
                 </div>
-            
-               
             </>
         )
     }

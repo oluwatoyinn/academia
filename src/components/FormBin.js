@@ -36,7 +36,7 @@ class Experts extends Component {
 
             <>         
                 <div className="container-fluid expert_p"> 
-                                
+                      
                     <h1 className="text-center text-capitalize font-weight-bold">learn from expert</h1>
                     <p className="text-center">No need to struggle. Get an experienced tutor.</p>
 
