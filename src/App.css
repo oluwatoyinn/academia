@@ -1,13 +1,13 @@
-*{
+/* *{
   padding: 0;
   margin: 0;
-}
+} */
 /* #navbar
 {
   background: #fff;
   padding:3px;
 } */
-.nav-link
+/* .nav-link
 {
   color: #fff !important;
   text-decoration: none;
@@ -29,9 +29,9 @@
   font-weight: 600;
   margin-left: 10px;
   
-}
+} */
 
-.caro_image
+/* .caro_image
 {
   position: fixed;
   top: 50%; 
@@ -62,7 +62,6 @@
 
 .info_text
 {
-   /* width: 100%; */
    height: 45vh;
    color: #fff;
 }
@@ -74,7 +73,6 @@
 .info_img
 {
   height: 45vh;
-  /* width: 100%; */
   background-image: url(./teach.jpg);
   background-size: cover;
 }
@@ -84,7 +82,6 @@
   padding: 7px;
   font-size: 24px !important;
   color: #fff !important;
-  /* width: 70%; */
   align-self: center;
   text-transform: capitalize;
   background: green !important;
@@ -95,18 +92,17 @@
 }
 
 .item img {
-    /* position: absolute; */
-    /* object-fit:cover; */
+
     top: 0;
     left: 0;
     min-height: 800px;
-}
+} */
 
 
 
 /* products */
 
-.product
+/* .product
 {
   height: 70vh;
   width: 100%;
@@ -114,7 +110,7 @@
 .product  p
 {
   font-size: 20px ;
-}
+} */
 
 
 
@@ -125,13 +121,13 @@
   height: 370px;
   margin: auto; 
 } */
-.expert_p
+/* .expert_p
 {
   font-size: 20px;
-}
+} */
 
 /* footer section */
-.apply_tutor
+/* .apply_tutor
 {
   height: 40vh;
   width: 100%; 
@@ -139,14 +135,12 @@
 
 .apply_text
 {
-   /* background: #fff; */
     width: auto;
     margin:50px;
     border-radius: 2px 20px 0px 20px;
     padding: 5px;
     padding-right: 20px;
     
-    /* color: #fff; */
 }
 .teaching
 {
@@ -157,7 +151,7 @@
 {
   color:#fff !important;
 
-}
+} */
 /* .sub_bg
 {
   {
@@ -171,7 +165,7 @@
 }
 } */
 
-.sub_bg hr {
+/* .sub_bg hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
   border: 0;
@@ -182,7 +176,6 @@
 {
   padding:40px 20px;
   box-sizing:border-box;
-  /* border:1px gray solid */
 }
 .wrap error
 {
@@ -206,7 +199,7 @@ hr
 {
   border: 2px solid gray;
   height:auto;
-} 
+}  */
 
 
 
@@ -259,7 +252,7 @@ hr
     text-overflow: ellipsis;
 }
  */
-
+/* 
  .card.hovercard 
 {
     position: relative;
@@ -320,9 +313,9 @@ hr
   max-width: 1700px;
   margin-left: auto;
   margin-right: auto;
-  /* background-color: #ccc; */
-}
-
+ 
+} */
+/* 
 #getTutor
 {
   padding-top: 28px;
@@ -341,4 +334,4 @@ hr
 .footerbelow span
 {
   color: aqua;
-}
+} */
