@@ -7,6 +7,7 @@ import image from "../assets/teach.jpg"
 import Services from "../Common/Services"
 import Portfolio from "../Common/Portfolio"
 import Team from '../Common/Team'
+import Contact from '../Common/Contact'
 
 
 class Home extends Component {
@@ -28,6 +29,7 @@ class Home extends Component {
                     <Services /> 
                     <Portfolio />
                     <Team />
+                    <Contact />
                 
             </React.Fragment>
         )

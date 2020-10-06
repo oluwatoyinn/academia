@@ -8,7 +8,7 @@ import img3 from '../assets/team/rotex.jpg'
 
 
 const teams =[
-    {name:'Victor Ajayi', position:'Deisgner', image:img1, icon1:'fa-twitter', icon2:'fa-facebook-f', icon3:'fa-linkedin-in'},
+    {name:'Victor Ajayi', position:'Frontend Designer', image:img1, icon1:'fa-twitter', icon2:'fa-facebook-f', icon3:'fa-linkedin-in'},
     {name:'Ibra James', position:'Engineer', image:img2, icon1:'fa-twitter', icon2:'fa-facebook-f', icon3:'fa-linkedin-in'},
     {name:'Noah Annoi', position:'Accountant', image:img3, icon1:'fa-twitter', icon2:'fa-facebook-f', icon3:'fa-linkedin-in'}
 ]
