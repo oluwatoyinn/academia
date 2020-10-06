@@ -14,7 +14,7 @@ class Services extends Component{
                     <div className="container">
                         <div className="text-center">
                             <h2 className="section-heading text-uppercase">Services</h2>
-                            <h3 className="section-subheading text-muted">Tuteria helps you connect with qualified tutors in your area to master the subjects, skills and exams that matter to you</h3>
+                            <h3 className="section-subheading text-muted">Ovacademia helps you connect with qualified tutors all over the world to master the subjects, skills and exams that matter to you</h3>
                         </div>
                         <div className="row text-center">
                             {services.map((service, index)=>{
