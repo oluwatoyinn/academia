@@ -5,7 +5,15 @@ import HomePage from './components/HomePage'
 import RegisterTutor from './components/RegisterTutor'
 import Pagewrapper from './components/website/PageWrapper';
 import Home from './components/website/Pages/Home';
-import About from './components/website/Pages/About';
+// import About from './components/website/Pages/About';
+// import AdminWrapper from './components/website/AdminWrapper';
+// import Login from './components/website/Registration/Login';
+import Login from './components/website/Pages/admin/Login'
+import Register from './components/website/Pages/admin/Register'
+import AppBar from './components/website/Pages/admin/AppBar'
+
+
+
 
 
 function App() {
@@ -16,10 +24,35 @@ function App() {
         <Route exact path="/" component={HomePage} />
         <Route path="/registertutor" component={RegisterTutor} />
       </Switch> */}
-      <Pagewrapper>
-        <Route exact path="/" component={Home} />
-      </Pagewrapper>
-      <Route path="/about" component={About} />
+
+      {/* <Route path="/admin" render={props=>(<Login/>)}/> */}
+
+      <Route 
+        exact={true} 
+        path="/" 
+        render={props=>(
+        <Pagewrapper>
+          <Home {...props} />
+        </Pagewrapper>)} 
+      />
+
+      <Route 
+        exact={true} 
+        path="/login" 
+        render={props=>(
+        <AppBar>
+          <Login {...props} />
+        </AppBar>)} 
+      />
+
+      <Route 
+        exact={true} 
+        path="/register" 
+        render={props=>(
+        <AppBar>
+          <Register {...props} />
+        </AppBar>)} 
+      />
       
      
     </React.Fragment>

@@ -22,7 +22,7 @@ class Home extends Component {
                         title="Welcome to Ovacademia"
                         subtitle="HOW CAN WE HELP YOU TODAY"
                         buttonText="Tell me more"
-                        titleLink="/services"
+                        // titleLink="/services"
                         showButton={true}
                         image={image}
                     />

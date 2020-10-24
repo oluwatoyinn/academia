@@ -25,7 +25,7 @@ class Porfolio extends Component{
                 <div className="container">
                     <div className="text-center">
                     <h2 className="section-heading text-uppercase">Portfolio</h2>
-                    <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 className="section-subheading text-muted">Check some of the aspect we can help you with</h3>
                     </div>
                     <div className="row">
                         {portfolio.map((item, index)=>{
@@ -34,10 +34,8 @@ class Porfolio extends Component{
                     </div>
                 </div>
              </section>
-
             </React.Fragment>
         )
     }
 }
-
 export default Porfolio;

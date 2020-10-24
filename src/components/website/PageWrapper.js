@@ -20,6 +20,7 @@ export default class Pagewrapper extends Component {
                             {/* <li className="nav-item"><Link className="nav-link js-scroll-trigger" to="/about">About</Link></li> */}
                             <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#team">Team</a></li>
                             <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                            <li className="nav-item"><Link className="nav-link js-scroll-trigger" to="/login">Become a Tutor</Link></li>
                         </ul>
                         </div>
                     </div>
