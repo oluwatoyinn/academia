@@ -8,6 +8,7 @@ import Services from "../Common/Services"
 import Portfolio from "../Common/Portfolio"
 import Team from '../Common/Team'
 import Contact from '../Common/Contact'
+import Footer from '../Common/Footer'
 
 
 class Home extends Component {
@@ -30,6 +31,7 @@ class Home extends Component {
                     <Portfolio />
                     <Team />
                     <Contact />
+                    <Footer/>
                 
             </React.Fragment>
         )
