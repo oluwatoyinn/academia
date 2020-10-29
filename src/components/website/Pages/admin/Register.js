@@ -12,6 +12,7 @@ import {RegisterSchema} from '../../../../utils/ValidationSchema'
 import { Grid } from '@material-ui/core';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import Button from '@material-ui/core/Button'
+import Breadcrumb from './Breadcrumb'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -20,27 +21,29 @@ const useStyles = makeStyles((theme) => ({
       margin: theme.spacing(3),
     //   padding:theme.spacing(2),
       width: theme.spacing(3),
-        width:'100%',
-        height:'70ch',
-        padding:theme.spacing(1)
+        width:'99%',
+        height:'80ch',
+        padding:theme.spacing(1),
+        // background:'#B8B9B8'
+        backgroundColor: theme.palette.grey[100],
     },
   },
   register: {
     '& .MuiTextField-root': {
         margin: theme.spacing(1),
-        width: '90%',
-        marginLeft:'40px'
+        width: '80%',
+        marginLeft:'10%'
     },
   },
   paper:{
-      width:'50xh',
-      marginTop:'3px'
+      width:'80%',
+      marginTop:'2px',
+      borderRadius:'15px'
   },
   profile:{
-    //   alignContent:'center',
       width:'auto',
       justify:'center',
-      marginLeft:'40px'
+      marginLeft:'9%'
   }
 }));
 
@@ -65,11 +68,11 @@ export default function SimplePaper() {
               {({isSubmitting, submitForm})=>(
                 <div className={classes.root}>
                     <Paper container elevation={4}>
-                    <h1></h1>
+                        <Breadcrumb />
                         <Container maxWidth="md">
                             <Grid item xs={12}>
                                 <Paper className={classes.paper}>
-                                    <h1 className="profile_top">Earn additionally </h1>
+                                    <h1 className="profile_top pt-3">Earn additionally </h1>
                                     <h1 className="profile"> money per month with Ovacademia.</h1>
                                     <h1 className="profile">Create your tutor profile!</h1>
                                     <div className="form_input">

@@ -23,9 +23,10 @@ const useStyles = makeStyles((theme) => ({
     },
     },
   paper: {
-    padding: theme.spacing(3),
+    padding: theme.spacing(2),
     textAlign: 'left',
     color: theme.palette.text.secondary,
+    // marginLeft:'10%'
   },
 }));
 
@@ -58,7 +59,7 @@ export default function FullWidthGrid() {
                                         <Field
                                             name="email"
                                             type="email"
-                                            label="Enter Email or Username"
+                                            label="Email or username"
                                             variant="outlined" 
                                             id="outlined-error" 
                                             component={TextField}
@@ -90,20 +91,20 @@ export default function FullWidthGrid() {
                             </Grid>
                             <Grid item xs={6}>
                             <Paper className="register_link" className={classes.paper}>Not registered? 
-                            <div>
-                                {/* <Link to="/register"> */}
-                                <Button 
-                                    // startIcon={isSubmitting ? <CircularProgress size="1rem" /> :null}
-                                    type="submit" 
-                                    variant="contained" 
-                                    color="primary" 
-                                    className=" m-2" 
-                                    disabled={isSubmitting}
-                                >
-                                Register
-                                </Button>
-                                {/* </Link> */}
-                            </div>
+                                <div>
+                                    <Link to="/register">
+                                    <Button 
+                                        // startIcon={isSubmitting ? <CircularProgress size="1rem" /> :null}
+                                        type="submit" 
+                                        variant="contained" 
+                                        color="primary" 
+                                        className=" m-2" 
+                                        disabled={isSubmitting}
+                                    >
+                                    Register
+                                    </Button>
+                                    </Link>
+                                </div>
                             </Paper>
                             </Grid>
                         </Grid>
