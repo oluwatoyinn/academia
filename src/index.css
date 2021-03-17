@@ -98,3 +98,11 @@ code {
   /* margin: auto; */
   padding-left: 30px;
 }
+
+.become-a-tutor{
+  background:#fed136
+}
+
+.become-a-tutor:hover{
+  background:#343a40
+}

@@ -24,7 +24,6 @@ const useStyles = makeStyles((theme) => ({
         width:'99%',
         height:'80ch',
         padding:theme.spacing(1),
-        // background:'#B8B9B8'
         backgroundColor: theme.palette.grey[100],
     },
   },
@@ -38,12 +37,14 @@ const useStyles = makeStyles((theme) => ({
   paper:{
       width:'80%',
       marginTop:'2px',
-      borderRadius:'15px'
+      borderRadius:'15px',
+    //   marginButtom:'2px'
   },
   profile:{
       width:'auto',
       justify:'center',
-      marginLeft:'9%'
+      marginLeft:'9%',
+    //   marginButtom:'5px'
   }
 }));
 
@@ -122,8 +123,6 @@ export default function SimplePaper() {
                                             Create a profile
                                             </Button>
                                             </div>
-                                            
-
                                         </Form>
                                     </div>
                                 </Paper>

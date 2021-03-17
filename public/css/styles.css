@@ -9864,6 +9864,7 @@ img::-moz-selection {
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
   color: #fed136;
+  border-bottom: #fed136 solid 3px;
 }
 
 @media (min-width: 992px) {
