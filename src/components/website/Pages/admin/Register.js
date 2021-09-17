@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     '& > *': {
       margin: theme.spacing(3),
     //   padding:theme.spacing(2),
-      width: theme.spacing(3),
+        // width: theme.spacing(3),
         width:'99%',
         height:'80ch',
         padding:theme.spacing(1),
@@ -61,14 +61,15 @@ export default function SimplePaper() {
           }}
 
           onSubmit={(data, setSubmitting)=>{
-                setSubmitting(true);
+                setSubmitting(false);
                 alert(JSON.stringify(data, null, 2));
           }}
           validationSchema={RegisterSchema}
           >
               {({isSubmitting, submitForm})=>(
+                <React.Fragment>
                 <div className={classes.root}>
-                    <Paper container elevation={4}>
+                    <Paper elevation={4}>
                         <Breadcrumb />
                         <Container maxWidth="md">
                             <Grid item xs={12}>
@@ -131,6 +132,7 @@ export default function SimplePaper() {
                         </Container>
                     </Paper>
                 </div>
+                </React.Fragment>
               )}
           </Formik>         
       </React.Fragment>

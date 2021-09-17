@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import {Route,Switch} from 'react-router-dom'
-import HomePage from './components/HomePage'
-import RegisterTutor from './components/RegisterTutor'
+import {Route} from 'react-router-dom'
+// import HomePage from './components/HomePage'
+// import RegisterTutor from './components/RegisterTutor'
 import Pagewrapper from './components/website/PageWrapper';
 import Home from './components/website/Pages/Home';
 // import About from './components/website/Pages/About';
@@ -11,6 +11,7 @@ import Home from './components/website/Pages/Home';
 import Login from './components/website/Pages/admin/Login'
 import Register from './components/website/Pages/admin/Register'
 import AppBar from './components/website/Pages/admin/AppBar'
+import TestingReg from './components/website/Pages/admin/TestingReg'
 
 
 
@@ -53,7 +54,15 @@ function App() {
           <Register {...props} />
         </AppBar>)} 
       />
-      
+
+      <Route 
+        exact={true} 
+        path="/reg" 
+        render={props=>(
+        <AppBar>
+          <TestingReg {...props} />
+        </AppBar>)} 
+      />
      
     </React.Fragment>
   );

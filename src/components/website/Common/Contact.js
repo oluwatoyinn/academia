@@ -40,7 +40,6 @@ class Contact extends Component {
                                                     placeholder="Your Name"
                                                     name="name"
                                                />
-
                                                 <CustomFormInput
                                                     className="form-control"
                                                     id="email"
@@ -48,7 +47,6 @@ class Contact extends Component {
                                                     placeholder="Your Email"
                                                     name="email"
                                                />
-
                                             </div>
                                             <div className="col-md-6">
                                                 <CustomFormInput
@@ -77,13 +75,9 @@ class Contact extends Component {
                                 </div>
                             </section>
                     )}
-
                 </Formik>
-           
-
             </React.Fragment>
         )
     }
 }
-
 export default Contact

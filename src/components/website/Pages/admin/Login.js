@@ -46,7 +46,7 @@ export default function FullWidthGrid() {
             validationSchema={LoginSchema}
             >
                 {({isSubmitting, submitForm})=>(
-                    <div className="login" className={classes.root}>
+                    <div className={classes.root}>
                     <h1 className="login_header">Login | Registration - Ovacademia</h1>
                     <Container maxWidth="m">
                         <Grid container spacing={3}>
@@ -90,7 +90,7 @@ export default function FullWidthGrid() {
                                 </Paper>
                             </Grid>
                             <Grid item xs={6}>
-                            <Paper className="register_link" className={classes.paper}>Not registered? 
+                            <Paper className={classes.paper}>Not registered? 
                                 <div>
                                     <Link to="/register">
                                     <Button 

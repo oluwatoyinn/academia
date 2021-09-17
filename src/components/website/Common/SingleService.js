@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 
 class Singleservice extends Component {
 
-
     render() {
         return (
             <React.Fragment>

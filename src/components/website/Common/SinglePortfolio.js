@@ -9,7 +9,7 @@ export default class Singleportfolio extends Component {
             <React.Fragment>
                 <div className="col-lg-4 col-sm-6">
                         <div className="portfolio-item">
-                        <Link className="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+                        <Link className="portfolio-link" to="/" data-toggle="modal" href="#portfolioModal6">
                             {/* <div className="portfolio-hover">
                             <div className="portfolio-hover-content"><i className="fas fa-plus fa-3x" /></div>
                             </div> */}

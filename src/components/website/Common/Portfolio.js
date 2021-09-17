@@ -6,7 +6,7 @@ import img_2 from '../assets/portfolio/eng2.jpg'
 import img_3 from '../assets/portfolio/computer.jpg'
 import img_4 from '../assets/portfolio/exam.jpg'
 import img_5 from '../assets/portfolio/cook2.jpeg'
-import img_6 from '../assets/portfolio/frontend.png'
+// import img_6 from '../assets/portfolio/frontend.png'
 
 const portfolio =[ 
     {title:'Mathematics', subtitle:'Algebra Calculus Geometry', image:img_1},

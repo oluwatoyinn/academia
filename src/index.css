@@ -100,7 +100,9 @@ code {
 }
 
 .become-a-tutor{
-  background:#fed136
+  background:#fed136;
+  
+  /* border:0px, 10px, 0px, 16px */
 }
 
 .become-a-tutor:hover{

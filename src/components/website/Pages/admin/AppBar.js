@@ -8,8 +8,8 @@ import IconButton from '@material-ui/core/IconButton';
 import {Link} from 'react-router-dom'
 
 // Pages
-import Login from './Login'
-import Register from './Register'
+// import Login from './Login'
+// import Register from './Register'
 // import MenuIcon from '@material-ui/icons/Menu';
 
 const useStyles = makeStyles((theme) => ({
@@ -39,7 +39,7 @@ export default function ButtonAppBar(props) {
             Ovacademia
           </Typography>
           <Link to="/">
-              <Button variant="h6" className={classes.title} color="inherit">Home</Button>
+              <Button  className={classes.title} color="inherit">Home</Button>
           </Link>
         </Toolbar>
       </AppBar>
